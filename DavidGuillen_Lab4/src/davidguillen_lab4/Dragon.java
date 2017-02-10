@@ -7,15 +7,8 @@ package davidguillen_lab4;
 
 /**
  *
- * @author Sammy Guergachi <sguergachi at gmail.com>
+ * @author macbookpro
  */
-public class DavidGuillen_Lab4 {
-
-    /**
-     * @param args the command line arguments
-     */
-    public static void main(String[] args) {
-        
-    }
+public class Dragon {
     
 }
