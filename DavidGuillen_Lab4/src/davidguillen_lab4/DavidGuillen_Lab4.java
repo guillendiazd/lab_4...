@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 public class DavidGuillen_Lab4 {
     public static void main(String[] args) {
-<<<<<<< HEAD
         Scanner read = new Scanner(System.in);
         ArrayList<Jugadores> lista_juga = new ArrayList();
         int opcion = 0;
@@ -11,7 +10,8 @@ public class DavidGuillen_Lab4 {
             System.out.println("Ingrese Opcion:\n"
                     + "1. Agregar Jugador\n"
                     + "2. Listar Jugadores\n"
-                    + "3. Eliminar Jugadores\n");
+                    + "3. Eliminar Jugadores\n"
+                    + "4. Juego\n");
             opcion = read.nextInt();
             if (opcion==1) {
                 System.out.println("Ingrese Nombre:");
@@ -44,13 +44,11 @@ public class DavidGuillen_Lab4 {
                 lista_juga.remove(num_jug);
             }
             if (opcion==4) {
-                
+                Tablero tab = new Tablero();
+                tab.tablero();
             }
             
         }
-=======
-        
->>>>>>> b6a72fc2d77d7364165b990454c9c2218fa85023
     }
     
 }
