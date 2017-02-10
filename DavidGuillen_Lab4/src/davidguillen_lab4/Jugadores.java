@@ -15,7 +15,7 @@ public class Jugadores {
         this.nombre_usuario = nombre_usuario;
         this.luga_naci = luga_naci;
         this.edad = edad;
-        this.sexo = sexo;
+        this.setSexo(sexo);
     }
 
     public String getNombre() {

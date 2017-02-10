@@ -11,7 +11,7 @@ import java.awt.Color;
  *
  * @author macbookpro
  */
-public class Piezas {
+public abstract class Piezas {
 
     private Color color_pieza;
     private String material_pieza;
@@ -23,6 +23,10 @@ public class Piezas {
         this.color_pieza = color_pieza;
         this.material_pieza = material_pieza;
     }
+
+    public abstract void movimiento();
+
+    public abstract void comer();
 
     public Color getColor_pieza() {
         return color_pieza;
@@ -44,6 +48,5 @@ public class Piezas {
     public String toString() {
         return "Piezas{" + "color_pieza=" + color_pieza + ", material_pieza=" + material_pieza + '}';
     }
-    
-    
+
 }

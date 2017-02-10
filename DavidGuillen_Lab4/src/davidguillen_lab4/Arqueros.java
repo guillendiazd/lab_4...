@@ -45,6 +45,16 @@ public class Arqueros extends Piezas {
     public String toString() {
         return "Arqueros{" + "direccion=" + direccion + ", nombre=" + nombre + '}';
     }
+
+    @Override
+    public void movimiento() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void comer() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
     
     
 }
