@@ -48,14 +48,18 @@ public class Magos extends Piezas{
     }
 
     @Override
-    public void movimiento() {
-        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    public int movimiento(int numer1, int numero2, int numero3, int numero4) {
+         if (numer1>=0 && numero2>=0) {
+            
+        } else {
+        }
     }
 
     @Override
-    public void comer() {
+    public int comer() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
+
     
     
 }

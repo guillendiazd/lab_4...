@@ -24,9 +24,9 @@ public abstract class Piezas {
         this.material_pieza = material_pieza;
     }
 
-    public abstract void movimiento();
+    public abstract int movimiento(int numer1,int numero2,int numero3,int numero4);
 
-    public abstract void comer();
+    public abstract int comer();
 
     public Color getColor_pieza() {
         return color_pieza;

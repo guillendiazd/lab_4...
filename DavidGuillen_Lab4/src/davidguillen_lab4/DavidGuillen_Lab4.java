@@ -46,23 +46,16 @@ public class DavidGuillen_Lab4 {
                 int num_jug = read.nextInt();
                 lista_juga.remove(num_jug);
             }
-            if (opcion==4) {
+            if (opcion == 4) {
                 Tablero tab = new Tablero();
                 tab.tablero();
-
-            if (opcion == 5) {
-                Caballeros cava = new Caballeros(0, 0, 0, 1);
-                boolean hola = false;
-                do {
-                    try {
-                        cava.movimiento();
-                    } catch (Exception e) {
-                        System.out.println("error");
-                    }
-                } while (hola == true);
             }
-
+            if (opcion == 5) {
+                System.out.println("adentro");
+                Caballeros cava = new Caballeros(0, 0, 0, 1);
+                int hola=cava.movimiento(0, 0, 0, 1);
+                System.out.println(hola);
+            }
         }
-    }
     }
 }

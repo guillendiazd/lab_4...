@@ -24,24 +24,18 @@ public class Caballeros extends Piezas {
     }
 
     @Override
-    public void movimiento() {
-        try {
-            if (posicion1 == actualposicion1 + 1) {
-
-            } else if (posicion2 == actualposicion2) {
-
-            } else {
-                throw new Exceptions("Cordenada no correcta");
-            }
-        } catch (Exception e) {
-            
+    public int movimiento(int numer1, int numero2, int numero3, int numero4) {
+        if (numero3-1 ==numer1  && numero2==numero4 || numero3 ==numer1  && numero2-1==numero4) {
+            return 0;
+        }else{return 1;
         }
-
+        
     }
 
     @Override
-    public void comer() {
+    public int comer() {
         throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 
+    
 }
