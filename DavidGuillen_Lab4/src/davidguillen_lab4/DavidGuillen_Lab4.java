@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 public class DavidGuillen_Lab4 {
     public static void main(String[] args) {
+<<<<<<< HEAD
         Scanner read = new Scanner(System.in);
         ArrayList<Jugadores> lista_juga = new ArrayList();
         int opcion = 0;
@@ -47,6 +48,9 @@ public class DavidGuillen_Lab4 {
             }
             
         }
+=======
+        
+>>>>>>> b6a72fc2d77d7364165b990454c9c2218fa85023
     }
     
 }
