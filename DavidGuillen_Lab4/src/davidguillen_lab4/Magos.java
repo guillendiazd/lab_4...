@@ -13,24 +13,24 @@ import java.awt.Color;
  */
 public class Magos extends Piezas{
 
-    public int[][] direccion;
+    public int[] direccion;
     private String nombre;
 
     public Magos() {
     super();
     }
 
-    public Magos(int[][] direccion, String nombre, Color color_pieza, String material_pieza) {
+    public Magos(int[] direccion, String nombre, Color color_pieza, String material_pieza) {
         super(color_pieza, material_pieza);
         this.direccion = direccion;
         this.nombre = nombre;
     }
 
-    public int[][] getDireccion() {
+    public int[] getDireccion() {
         return direccion;
     }
 
-    public void setDireccion(int[][] direccion) {
+    public void setDireccion(int[] direccion) {
         this.direccion = direccion;
     }
 
@@ -45,6 +45,16 @@ public class Magos extends Piezas{
     @Override
     public String toString() {
         return "Magos{" + "direccion=" + direccion + ", nombre=" + nombre + '}';
+    }
+
+    @Override
+    public void movimiento() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
+    @Override
+    public void comer() {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
     
     
