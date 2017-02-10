@@ -4,11 +4,14 @@ import java.util.Scanner;
 public class DavidGuillen_Lab4 {
     public static void main(String[] args) {
         Scanner read = new Scanner(System.in);
-        ArrayList lista_juga = new ArrayList();
+        ArrayList<Jugadores> lista_juga = new ArrayList();
         int opcion = 0;
         while(opcion==0){
             System.out.println("Ingrese Opcion:\n"
-                    + "1.Agregar Jugador\n");
+                    + "1. Agregar Jugador\n"
+                    + "2. Listar Jugadores\n"
+                    + "3. Eliminar Jugadores\n");
+            opcion = read.nextInt();
             if (opcion==1) {
                 System.out.println("Ingrese Nombre:");
                 String nombre = read.next();
@@ -24,6 +27,25 @@ public class DavidGuillen_Lab4 {
                 String sexo = read.next();
                 lista_juga.add(new Jugadores(nombre, nom_usu, lug_nac, edad, sexo));
             }
+            if (opcion==2) {
+                int num=0;
+                for ( Jugadores t : lista_juga) {
+                    System.out.println(num + "" + t);
+                }
+            }
+            if (opcion==3) {
+                int num=0;
+                for ( Jugadores t : lista_juga) {
+                    System.out.println(num + "" + t);
+                }
+                System.out.println("Ingrese a que jugador desea eliminar:");
+                int num_jug = read.nextInt();
+                lista_juga.remove(num_jug);
+            }
+            if (opcion==4) {
+                
+            }
+            
         }
     }
     
